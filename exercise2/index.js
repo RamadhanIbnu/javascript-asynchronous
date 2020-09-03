@@ -1,4 +1,4 @@
-const getNationality = async () => {
+const getGithubInfo = async () => {
     try {
         let response = await fetch("https://api.github.com/users/ramadhanibnu");
         let data = await response.json();
@@ -15,4 +15,4 @@ const getNationality = async () => {
         console.log("maaf data yang anda cari tidak ditemukan")
     }
 }
-getNationality()
+getGithubInfo()
